@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Josefin Sans', sans-serif;
+   background-color: #111111;
+}
+
+.login {
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: space-between;
+   height: 100vh;
+}
+
+.img-login img {
+   height: 100vh;
+   width: 60vw;
+}
+
+.form {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   align-items: center;
+   width: 30vw;
+   height: 100vh;
+   background-color: #111111;
+}
+
+.form-border {
+   border: 2px solid #2f502c;
+   padding: 3rem;
+   border-radius: 1rem;
+   box-shadow: 0px 0px 20px #2f502c;
+}
+.form label {
+   color: #f1ecec;
+}
+.form input {
+   width: 15rem;
+}
+
+.form h2 {
+   padding: 0.5rem 1rem;
+   border-radius: 1rem;
+   background-color: #9a2815;
+   color: #f1ecec;
+   margin-bottom: 2rem;
+}
+
+.btn-primary {
+   background-color: #4164a6;
+   margin-top: 1rem;
+   transition: 0.2s all;
+   padding: 0.5rem 1.5rem;
+   font-weight: bold;
+}
+.btn-primary:hover {
+   background-color: #4164a6a1;
+}
+
+@media (max-width: 768px) {
+   .img-login img {
+      visibility: hidden;
+      width: 0vw;
+   }
+   .login {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .form-border {
+      width: 20rem;
+   }
+}
