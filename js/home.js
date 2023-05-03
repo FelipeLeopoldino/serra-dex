@@ -52,7 +52,7 @@ form.addEventListener('submit', event => {
 
 if (localStorage.getItem('token') == null) {
    alert('Você precisa estar logado para essa página')
-   window.open('./login.html', '_self')
+   window.open('./index.html', '_self')
 }
 
 buttonPrev.addEventListener('click', () => {
@@ -69,7 +69,7 @@ buttonNext.addEventListener('click', () => {
 
 function sair() {
    localStorage.removeItem('token')
-   window.open('../login.html', '_self')
+   window.open('../index.html', '_self')
 }
 
 renderizarPokemon(procurarPokemon)
