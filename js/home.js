@@ -50,11 +50,6 @@ form.addEventListener('submit', event => {
    renderizarPokemon(input.value.toLowerCase())
 })
 
-if (localStorage.getItem('token') == null) {
-   alert('Você precisa estar logado para essa página')
-   window.open('./index.html', '_self')
-}
-
 buttonPrev.addEventListener('click', () => {
    if (procurarPokemon > 1) {
       procurarPokemon -= 1
@@ -66,6 +61,11 @@ buttonNext.addEventListener('click', () => {
    procurarPokemon += 1
    renderizarPokemon(procurarPokemon)
 })
+
+if (localStorage.getItem('token') == null) {
+   alert('Você precisa estar logado para essa página')
+   window.open('./index.html', '_self')
+}
 
 function sair() {
    localStorage.removeItem('token')
