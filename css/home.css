@@ -75,7 +75,6 @@ main {
    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
 }
 
-
 .buttons {
    position: absolute;
    bottom: 17%;
@@ -96,6 +95,7 @@ main {
    color: white;
    background-color: #444;
    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+   cursor: pointer;
 }
 
 .button:active {
